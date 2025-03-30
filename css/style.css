@@ -1,5 +1,4 @@
-/* poppins-regular - latin */
-@font-face {
+poppins-regular - latin */ @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
@@ -42,6 +41,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
+  line-height: normal;
 }
 
 a {
@@ -53,9 +53,13 @@ ul,
 ol {
   list-style: none;
 }
+img {
+  object-fit: cover;
+  display: flex;
+}
 
-.body {
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 4%;
@@ -63,6 +67,15 @@ ol {
   background-color: #fff;
 }
 
+h1 {
+  margin: 0;
+}
+.btn {
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 33px;
+}
 .container {
   width: 100%;
   max-width: 1261px;
@@ -75,8 +88,11 @@ ol {
 /* HEADER START */
 
 .header {
-  padding-bottom: 36px;
-  padding-top: 36px;
+  background-image: url(../images/bg_img_hero.png), url(../images/bg_img_hero\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+  background-color: #f6ebda;
+  padding-bottom: 396px;
 }
 .header-container {
 }
@@ -84,6 +100,9 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 36px;
+  padding-top: 36px;
+  margin-bottom: 46px;
 }
 .container {
 }
@@ -94,7 +113,6 @@ ol {
 .sitenav {
 }
 .sitenav-list {
-  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -133,6 +151,56 @@ ol {
 .header-nav-container-actions-image {
 }
 .header-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.header-hero-content {
+  width: 100%;
+  max-width: 489px;
+}
+.header-hero-title {
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 140%;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+.orange-text {
+  color: #ff902b;
+}
+.header-hero-description {
+  letter-spacing: 140%;
+  color: #7e7d7a;
+  margin-bottom: 32px;
+}
+.header-hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.header-hero-btn {
+  display: flex;
+  gap: 10px;
+  background-color: #2f2105;
+  align-items: center;
+
+  color: #fff;
+}
+
+.header-hero-btn-outline {
+  color: #ff902b;
+}
+
+.header-hero-btn-outline:hover {
+  color: #2f2105;
+}
+
+.header-hero-btn:hover {
+  opacity: 0.8;
+}
+.header-hero-image {
+}
 /* HEADER END */
