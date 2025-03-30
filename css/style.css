@@ -88,7 +88,8 @@ h1 {
 /* HEADER START */
 
 .header {
-  background-image: url(../images/bg_img_hero.png), url(../images/bg_img_hero\ 2.png);
+  background-image: url(../images/bg_img_hero.png),
+    url(../images/bg_img_hero\ 2.png);
   background-repeat: no-repeat;
   background-position: right top, left bottom;
   background-color: #f6ebda;
